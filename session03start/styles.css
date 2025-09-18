@@ -1,0 +1,119 @@
+header {
+    background-color: #BF95C9;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    font-family: "Fascinate", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    margin-top: 0px;
+    padding: 0;
+    font-size: 3rem;
+    color: #4f177a;
+}
+
+header h2 {
+    font-family: "Baumans", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    text-align: center;
+    color: #3f2191;
+}
+
+nav {
+    font-family: "Baumans", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    background-color: #EE6C62;
+    font-size: 1.5rem;
+
+}
+
+nav a {
+    font-family: "Baumans", system-ui;
+    color: #111;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+}
+
+nav a:hover {
+    color: #222;
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    background-color: #92BAF7;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #111111;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body h2,
+body h3 {
+    font-family: "Baumans", system-ui;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 25px;
+    color: #4f177a;
+}
+
+body p {
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #2e1212;
+}
+
+footer {
+    margin: 0;
+    background-color: #8AF8B8;
+    font-family: "Baumans", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    margin-top: 25px;
+}
+
+footer h3 {
+    font-family: "Fascinate", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    margin-top: 0px;
+    padding: 0;
+    font-size: 2rem;
+    text-align: left;
+    padding-left: 25px;
+}
+
+footer a {
+    font-family: "Baumans", system-ui;
+    color: #111;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+}
+
+footer a:hover {
+    color: #222;
+    text-decoration: underline;
+}
+
+.gallery img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #A9A9A9;
+
+}
