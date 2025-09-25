@@ -1,0 +1,169 @@
+body {
+    background-color: #ACACAC;
+    background-image:url("images/moss01.jpg");
+    background-attachment: fixed;
+    background-size: 200px;
+    margin: 0;
+    padding: 0;
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    /* Inter Weight: 100 – 900 */
+    font-style: normal;
+
+}
+
+/* only us id once per page, use a hashtag */
+#wrapper {
+    width: 80%;
+    background-color:#CECECE;
+    margin: 40px auto;
+    padding: 20px 100px;
+    border-radius: 8px;
+    overflow:hidden;
+}
+
+header h1 {
+  font-family: "Alfa Slab One", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 66px;
+  color: #9f00fc;
+  display: inline-block; 
+  filter: drop-shadow(5px 10px 8px #E716B373);
+  animation: glowPulse 2s infinite alternate;
+}
+
+@keyframes glowPulse {
+  from { text-shadow: 0 0 5px #f35dcd; }
+  to   { text-shadow: 0 0 20px #f06bf0, 0 0 40px #946892; }
+}
+
+header h2 {
+  font-family: "Alfa Slab One", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  color: #000;
+}
+
+
+/* use them as many times as you like, use period */
+span.wow {
+    color: #f00;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+span.consec{
+    color: rgb(19, 119, 16);
+    font-weight: 999;
+    text-transform:full-size-kana;
+    font-style: oblique;
+    display: inline-block; 
+    filter: drop-shadow(5px 10px 8px #4CCA61F2);
+}
+
+main p.types {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+main table {
+    text-align:center;
+    background-color: #e1ff8b;
+}
+main table th{
+    background-color: #aBca58;
+}
+
+main table td, main table th{
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+main h2 {
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  color: #ee790c;
+}
+
+.mushTypes{
+    width: 80%;
+    margin: 2rem auto;
+    background-color: #7bcc6b;
+    box-shadow: 10px 15px 5px #1c3a16;
+    border-radius: 8px;
+    overflow:hidden;
+}
+
+.mushTypes tr:hover {
+  background-color: #99cea7; 
+}
+
+.mushTypesFeatured{
+    width: 80%;
+    margin: 2rem auto;
+    background-color: #ff9d0a;
+    box-shadow: 10px 15px 5px #f5894a;
+    border-radius: 8px;
+    overflow:hidden;
+}
+
+.mushTypesFeatured tr:hover {
+  background-color: #f0a957; 
+}
+
+#openerPar{
+    color:#104d10;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#closerPar{
+    color:#eb30d8;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap:1rem;
+    width:100%
+}
+
+.mainImg{
+    width:100%;
+    height:100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px #00000033;
+    overflow: hidden;
+}
+
+.mainImg img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.sideImgs{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sideImgs img{
+    width:100%;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 0 3px 8px #00000026;
+}
+
