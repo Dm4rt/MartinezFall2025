@@ -1,0 +1,182 @@
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* END border-box fix */
+
+body {
+    background-color: #13583A;
+}
+
+div.container {
+    width: 80%;
+    background-color: #229C67;
+    /* center the div container */
+    margin: 40px auto;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+    padding: 20px;
+}
+
+header {
+    background-color: #33E89A;
+}
+
+nav {
+    background-color: rgb(137, 189, 188);
+}
+
+main {
+    background-color: #1B7A50;
+    width: 70%;
+    float: left;
+}
+
+aside {
+    background-color: #229C67;
+    width: 30%;
+    float: left;
+}
+
+footer {
+    background-color: #33E89A;
+    float: none;
+    clear: both;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    background-color: #13583A;
+    width: 200px;
+    height: 50px;
+    padding: 15px 20px;
+    text-align: center;
+    margin: 0px 10px;
+    border-radius: 120px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav a:hover {
+    color: #33E89A;
+}
+
+.history-image {
+    height: 160px;
+    overflow: hidden;
+    margin: 0 0 20px 0;
+    padding: 0;
+    border: none;
+}
+
+.history-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: 50% 45%;
+}
+
+.history-row-left::after,
+.history-row-right::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.history-row-right {
+    background: #229C67;
+    margin: 20px 0;
+    padding: 15px;
+    border: 4px dashed #13583A;
+}
+
+.history-row-right img {
+    width: 40%;
+    height: auto;
+    border: 6px solid #33E89A;
+    background: #1B7A50;
+    float: right;
+    margin: 0 0 12px 16px;
+
+}
+
+.history-text-right {
+    float: left;
+    width: 55%;
+
+}
+
+.history-row-left {
+    background: #229C67;
+    margin: 20px 0;
+    padding: 15px;
+    border: 4px dashed #13583A;
+}
+
+.history-row-left img {
+    width: 40%;
+    height: auto;
+    border: 6px solid #33E89A;
+    background: #1B7A50;
+    float: left;
+    margin: 0 0 12px 16px;
+
+}
+
+.history-text-left {
+    float: right;
+    width: 55%;
+
+}
+
+.timeline{
+    margin:0 0 12px 18px;
+    padding: 0;
+}
+.timeline li{
+    margin: 6px 0;
+}
+.aside-note{
+    background:#1B7A50;
+    padding: 10px;
+    border-left: 6px solid #33E89A;
+}
+
+.ads{
+    text-align: center;
+    background: #1B7A50;
+    padding: 10px;
+    border:3px solid #33E89A;
+    margin-top: 15px;
+}
+.aside-ad{
+    display:block;
+    width:90%;
+    max-width:250px;
+    margin: 5px auto;
+    box-sizing: border-box;
+    padding: 5px;
+    float: none ;
+}
