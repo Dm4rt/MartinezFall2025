@@ -1,0 +1,274 @@
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+}
+
+/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
+/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* END border-box fix */
+
+body {
+    background-color: #2E3311;
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrapper {
+    max-width: 1500px;
+    background-color: #fff;
+    border: solid #522b11 10px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Add padding to all of the #wrapper child elements, >* symbol looks for first child in inside the selector */
+#wrapper>* {
+    padding: 20px;
+}
+
+header {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    background: #D98248;
+    order: 1;
+    flex: 0 0 100%;
+    opacity: 0.8;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+}
+
+.mushroom {
+    height: 124px;
+    width: auto;
+    margin-left: 12px;
+    filter: drop-shadow(0 6px 12px #2E3311);
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    justify-self: end;
+}
+
+header h1 {
+    font-family: "Ribeye", serif;
+    color: #1b3003;
+    text-shadow: 0 10px 22px #2E3311;
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 0;
+}
+
+header h2 {
+    font-family: "Patrick Hand", cursive;
+    color: #284605;
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 0;
+}
+
+main {
+    background: #7F8C99;
+    order: 3;
+    flex: 1 1 500px;
+}
+
+main h2,
+h3 {
+    font-family: "Patrick Hand", cursive;
+}
+
+main p {
+    font-family: "Coming Soon", cursive;
+
+}
+
+nav {
+    background: cadetblue;
+    order: 2;
+    flex: 0 0 180px;
+}
+
+nav li {
+    font-family: "Coming Soon", cursive;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    padding: .55rem .8rem;
+    border-radius: 999px;
+    font-family: "Patrick Hand", cursive;
+    background: #DB9814;
+    color: #1c1c1c;
+    border: 2px solid transparent;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav li:hover {
+    background: transparent;
+    color: #DB9814;
+    border-color: #DB9814;
+}
+
+aside {
+    background: seagreen;
+    order: 4;
+    flex: 0 0 180px;
+}
+
+aside h2 {
+    font-family: "Patrick Hand", cursive;
+}
+
+aside p {
+    font-family: "Coming Soon", cursive;
+}
+
+.buy-links {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    margin-top: .8rem;
+}
+
+.button-buy {
+    display: inline-block;
+    text-decoration: none;
+    padding: .55rem .8rem;
+    border-radius: 999px;
+    font-family: "Patrick Hand", cursive;
+    background: #DB9814;
+    color: #1c1c1c;
+    border: 2px solid transparent;
+    text-align: center;
+}
+
+.button-buy:hover {
+    background: transparent;
+    color: #DB9814;
+    border-color: #DB9814;
+}
+
+footer {
+    background: darkslateblue;
+    order: 5;
+    flex: 0 0 100%;
+}
+
+footer h2 {
+    font-family: "Patrick Hand", cursive;
+    color: #DB9814
+}
+
+footer li,
+a {
+    font-family: "Coming Soon", cursive;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* SUBSCRIBE BUTTON */
+main div.buttonAbsolute {
+    background-color: #ffd000;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 150px;
+    opacity: 0.9;
+    padding: 15px;
+    border-radius: 125px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+/* view gallery button */
+main div.buttonRelative {
+    background-color: #ffd000;
+    width: 100px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-inline: auto;
+    z-index: 3;
+}
+
+article {
+    padding-inline: 6px;
+}
+
+article section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+article section h3 {
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+
+article section p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+article section h3,
+article section p {
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
+}
+
+article section img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid #2E3311;
+    box-shadow: 0 10px 22px #2E3311;
+}
+
+.article-img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #4c551c;
+    box-shadow: 0 10px 22px #2E3311;
+}
+
+.img-right {
+    grid-column: 2;
+}
+
+.img-left {
+    grid-column: 1;
+}
+
+.p-left {
+    grid-column: 1;
+}
+
+.p-right {
+    grid-column: 2;
+}
+
+
+article section::after {
+    content: "";
+    display: block;
+    clear: both;
+}
