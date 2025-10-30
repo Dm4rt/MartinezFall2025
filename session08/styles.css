@@ -1,0 +1,185 @@
+/* border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  /* remove margin and padding on body */
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  background: radial-gradient(circle, #000000 40%, #3b2f2f); /* this is cool */
+  font-family: "Yrsa", serif;
+  color:white;
+}
+
+/* Grouping example */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "Pirata One", cursive;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  color: #f1f1ea;
+  margin: 0;
+}
+
+h2, h3, h4, h5 {
+  font-family: "Goldman", sans-serif;
+  color: #f1c40f;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  background: #1e1e1e;
+  /* grid layout parent */
+  display: grid;
+  /* create 12 col layout */
+  grid-template-columns: repeat(12, 1fr);
+  width: 85%;
+  margin: 50px auto;
+  background: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* padding on immediate children of wrapper */
+.wrapper>* {
+  padding: 20px;
+}
+
+header {
+  background: #2a2356;
+  /* span all 12 cols*/
+  grid-column: 1 / 13;
+  position: relative;
+}
+
+header h1 {
+  margin: 10px 0;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.header-banner {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  filter: contrast(1.05) brightness(.95) saturate(1.05);
+}
+main {
+  background: #2f4f4f;
+  /* span 6 cols */
+  grid-column: 4 / 10;
+  color: #ffffff;
+}
+
+nav {
+  background: #21564a;
+  /* span 3 cols */
+  grid-column: 1 / 4;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside {
+  background: #21564a;
+  /* span 3 cols */
+  grid-column: 10 / 13;
+  color: #ffffff;
+  font-family: "Goldman", sans-serif;
+}
+
+/* span 2 rows */
+main,
+nav,
+aside {
+  grid-row: 2 / 4;
+}
+
+
+footer {
+  background:#2a2356;
+  /* span all 12 cols*/
+  grid-column: 1 / 13;
+  color: #ffffff;
+  text-align: Center;
+}
+.guitar-icon {
+  position:absolute;
+  right: 30px;
+  top: 20px;
+  width: 80px;
+  height:auto;
+  opacity:0.9;
+}
+
+/* This should alternat image and text w grid inside main */
+.features { 
+  display: grid; 
+  grid-template-columns: 1fr; 
+  row-gap: 26px; 
+}
+.feature { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  column-gap:20px; 
+  align-items:center; 
+  background: #0000001f;
+  border-radius:8px;
+  padding:16px;
+}
+.feature img { 
+  width: 100%; 
+  height: 230px; 
+  object-fit: cover; 
+  border-radius: 6px; 
+}
+.feature:nth-child(2) .feature-text { grid-column: 1; }
+.feature:nth-child(2) .feature-image { grid-column: 2;}
+
+li a {
+  color: #ffffff;
+  font-family: "Goldman", sans-serif;
+  text-decoration: none;
+}
+li a:hover {
+  text-decoration: underline;
+}
+.sources {
+  margin-top: 8px;
+}
+.sources-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 16px;
+}
+.sources-list li a {
+  color: #f7e9b5;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+}
+.sources-list li a:hover {
+  text-decoration: underline;
+}
+
