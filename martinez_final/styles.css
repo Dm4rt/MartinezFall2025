@@ -87,7 +87,7 @@ header {
   align-items: center;
   justify-content: flex-start;
   padding-left: 50px;
-  background: rgba(0, 0, 0, 0.3);
+  background: #0000004d;
 }
 
 .guitar-icon {
@@ -100,7 +100,7 @@ header h1 {
   font-family: "Pirata One", cursive;
   font-size: 4rem;
   margin: 0;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  text-shadow: 3px 3px 6px #000000cc;
   color: #f1f1ea;
 }
 
@@ -290,7 +290,7 @@ li a:hover {
 
 /* this is for the galler page*/
 .cart-container {
-  width: auto; /* remove the fixed 10% */
+  width: auto;
   display: flex;
   align-items: center;
 }
@@ -315,7 +315,7 @@ li a:hover {
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 8px #00000080;
 }
 .gallery-page main {
   grid-column: 1/13;
@@ -371,7 +371,7 @@ li a:hover {
     height: 400px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 15px #00000080;
     transition: transform 0.3s ease;
     animation: riseIn 0.7s ease-out forwards;
 }
@@ -400,7 +400,7 @@ li a:hover {
 }
 .about-store {
     padding: 20px;
-    background: rgba(0, 0, 0, 0.15);
+    background: #00000026;
     border-radius: 10px;
     line-height: 1.8;
 }
@@ -417,13 +417,16 @@ li a:hover {
 .ads{
   height:100%;
   width: auto;
+  border: none;
+  display: block;
+  overflow: hidden;
 }
 /* this is for the about/contatct form */
 .profile-container {
     display: flex;
     align-items: center;
     gap: 30px;
-    background: rgba(0, 0, 0, 0.2);
+    background: #00000033;
     padding: 20px;
     border-radius: 12px;
 }
@@ -434,7 +437,7 @@ li a:hover {
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #f1c40f;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 15px #00000080;
 }
 
 .profile-text p {
@@ -471,6 +474,15 @@ li a:hover {
     align-self: flex-start;
     padding: 10px 30px;
 }
+#thankYouMessage h3 {
+    color: #f1c40f;
+    font-family: "Goldman", sans-serif;
+    margin-bottom: 10px;
+}
+#thankYouMessage p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
 /*for the gibson product page*/
 .product-main-view {
     display: flex;
@@ -480,7 +492,7 @@ li a:hover {
 .main-product-img {
     width: 40%;
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px #00000080;
 }
 .product-intro {
     flex: 1;
@@ -508,4 +520,20 @@ li a:hover {
 }
 .spec-column li strong {
     color: #f1c40f;
+}
+aside {
+  background: #21564a;
+  grid-column: 10 / 13;
+  color: #ffffff;
+  font-family: "Goldman", sans-serif;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+#p5-container canvas {
+  display: block;
+  max-width: 100%;
+  height: auto !important;
 }
