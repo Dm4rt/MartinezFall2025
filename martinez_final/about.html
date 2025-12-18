@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guitar World - About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Pirata+One&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+</head>
+<body class="about-page">
+    <div class="wrapper">
+        <header>
+            <img class="header-banner" src="images/header.jpg" alt="Guitar banner" />
+            <div class="header-content-overlay">
+                <img class="guitar-icon" src="images/logo_2.png" alt="Guitar symbol" />
+                <h1>The World Of Guitars</h1>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <div class="cart-container">
+                <span class="cart-icon">🛒</span>
+                <span id="cart-count">0</span>
+            </div>
+        </nav>
+
+        <main>
+            <section class="profile-section">
+                <h2>The Founder</h2>
+                <div class="profile-container">
+                    <img src="images/me.jpg" alt="Daniel Martinez" class="profile-pic">
+                    <div class="profile-text">
+                        <h3>Daniel Martinez</h3>
+                        <p>I am a Senior at Hunter College and the founder of <strong>World of Guitars</strong>. My mission is to provide musicians with the highest quality gear while sharing the rich history of the instruments we love.</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <section class="contact-section">
+                <h2>Reach Out</h2>
+                <p>Have questions about a specific model? Send us a message below!</p>
+                <form class="contact-form" onsubmit="return false;">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="How can we help?"></textarea>
+                    </div>
+                    <button type="submit" class="learn-btn">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <aside>
+            <iframe class="ads" src="https://editor.p5js.org/danmartinez2004/full/fz3DODkbZ"></iframe>
+        </aside>
+
+        <footer>
+            <h2>Contact/Sources</h2>
+            <p>Created by Daniel Martinez</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gibson Les Paul Standard - World of Guitars</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Pirata+One&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body class="product-page">
+    <div class="wrapper">
+        <header>
+            <img class="header-banner" src="images/header.jpg" alt="Guitar banner" />
+            <div class="header-content-overlay">
+                <img class="guitar-icon" src="images/logo_2.png" alt="Guitar symbol" />
+                <h1>The World Of Guitars</h1>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <div class="cart-container">
+                <span class="cart-icon">🛒</span>
+                <span id="cart-count">0</span>
+            </div>
+        </nav>
+
+        <main>
+            <div class="product-container">
+                <div class="product-main-view">
+                    <img src="images/01.jpg" alt="Gibson Les Paul" class="main-product-img">
+                    <div class="product-intro">
+                        <h2>Gibson Custom Murphy Lab 1960 Les Paul Standard</h2>
+                        <p class="prices">$1599</p>
+                        <p>The Murphy Lab 1960 Les Paul Standard Reissue captures the magic of a vintage original from Kalamazoo. Featuring a Slim Taper neck and Custombucker pickups, this is the centerpiece for any serious collection.</p>
+                        <button id="details-btn" class="learn-btn">Show More Details</button>
+                    </div>
+                </div>
+
+                <div id="extra-details" style="display: none;">
+                    <hr class="section-divider">
+                    <div class="specs-grid">
+                        <div class="spec-column">
+                            <h3>Body & Neck</h3>
+                            <ul>
+                                <li><strong>Top:</strong> 2-piece figured maple</li>
+                                <li><strong>Body:</strong> Lightweight Mahogany</li>
+                                <li><strong>Neck:</strong> Solid Mahogany</li>
+                                <li><strong>Profile:</strong> 1960s Slim Taper</li>
+                            </ul>
+                        </div>
+                        <div class="spec-column">
+                            <h3>Hardware & Electronics</h3>
+                            <ul>
+                                <li><strong>Pickups:</strong> Dual Alnico III Custombuckers</li>
+                                <li><strong>Bridge:</strong> Tune-o-matic</li>
+                                <li><strong>Tuners:</strong> Kluson Aged Patina</li>
+                                <li><strong>Finish:</strong> Ultra Light Aged</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+			<iframe class = "ads" src="https://editor.p5js.org/danmartinez2004/full/fz3DODkbZ"></iframe>
+		</aside>
+        <footer>
+            <h2>Contact/Sources</h2>
+            <p>Created by Daniel Martinez</p>
+        </footer>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#details-btn").click(function(){
+                $("#extra-details").slideToggle("slow");
+                if ($(this).text() == "Show More Details") {
+                    $(this).text("Hide Details");
+                } else {
+                    $(this).text("Show More Details");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
